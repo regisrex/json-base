@@ -1,12 +1,10 @@
 # **JSONDB**
-Json(Javascript Object Notation) Database  
-Made for nodejs developers  
-Maintained by [@ndzhwr](https://twitter.com/ndzhwr)
+A simple database-like tool for nodejs using JSON for data storage  
 ___
 
-A simple database-like tool for nodejs using JSON for data storage with its ORM. 
+
 ```bash
-$ yarn add jsondb
+$ npm install jsondb
 ```
 
 
@@ -94,12 +92,12 @@ On this step, file called `database.json` will be created in the root folder.
 
 You will need to remove the models in the json database as long as the sample ones may not match  with your purpose.
 
-#### 2. Getting data.
+#### 2. Getting data
 In this section, we're going to see how we can get data from our json database.
 ```ts
 
     import { getData } from 'jsondb'
-    import UserType from './types/users'
+    import UserType from './types/usertype'
 
 
 /*    1. Getting all the users   */
@@ -118,3 +116,109 @@ In this section, we're going to see how we can get data from our json database.
 
 ```
 
+
+#### 3. Create data
+As said before, we'll be creating  a simple crud operation, this means that we already have read checked on our todo checklist as read is the same as getting data. Next we're going to work on creating data.
+```ts
+    import { createData } from 'jsondb'
+    import UserType from './types/usertype'
+    
+    const newUser : UserType = {
+        id : 4 ,
+        username : "delba",
+        email : "delba@oli.dev",
+        password : "8ui4gi82k4kj889n"
+    }
+
+    createData("users" ,{ data : newUser }, (err , user) => {
+        if(err){
+            console.log(err.message)
+            process.exit(0)
+           }
+        console.log(user)
+    })
+
+    /*  It's also possible to add an array of users, jsondb api can handle that too */
+
+    const unsavedUsers  : UserType[] = [
+        {
+            id : 4 ,
+            username : "tim",
+            email : "tim@neut.com",
+            password : "3456yojp%7-055"
+        }, 
+        {
+            id : 5 ,
+            username : "palmer",
+            email : "palmer@jd.com",
+            password : "uhnui0no082kn9"
+        }
+    ]
+
+    createData("users" , { data : unsavedUsers }  , (err , users) => {
+         if(err){
+            console.log(err.message)
+            process.exit(0)
+           }
+        console.log(users)
+    })
+```
+
+
+#### 4. Update and delete data
+
+Let's combine the update and  the delete  sections into one section as long as they're kinda simple and easy to understand.
+
+Updating data will require a unique identifier of the record we're updating.
+```ts
+import { updateData } from "jsondb"
+import { Request , Response } from "@types/node"
+import UserType from "./types/usertype"
+
+app.put("/updateUser/:id" , async (req : Request ,res) => {
+    const userId = req.params.id
+    const { username } = req.body
+    const updatedUser = await updateData("users" , {
+        // update user wher the id equals to userId
+        where : {
+            id : userId
+        },
+        //  update the user with a new username
+        data : {
+            username
+        }
+    })
+
+})
+```
+
+Enough for updating data, the next is to learn how to delete some records from the json database. Here, a unique identifier is required.
+
+```ts
+
+import { deleteData } from "jsondb"
+import UserType from "./types/usertype"
+
+deleteData("users" , { id : 2 } , (err,data) => {
+    if(err){
+        console.log("Uncaught error " , err)
+        process.exit(0)
+    }
+    console.log(data)
+} )
+
+```
+
+🎉 Congrats! Now we've finished creating our CRUD operations on the users model or collection and I hope now you're able to consume our API and make your life easier. 
+## Contributing
+Willing to contribute to this Open Source project ?
+You can contribute to this project by **making bug reports** , **requesing feautures** ,  **Adding features** and more other ways. Read more  [here](./CONTRIBUTING.md) before contributing.
+
+## Maintainers
+This project is built and maintained by [@ndzhwr](https://twitter.com/ndzhwr).
+
+## Licence
+This project is [MIT]() licenced.
+___
+
+<p align="right">⁕ <a href="https://github.com/ndzhwr/works">ndzhwr-works</a> 2023. </p>
