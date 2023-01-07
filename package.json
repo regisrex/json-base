@@ -1,0 +1,17 @@
+{
+  "name": "jsondb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ndzhwr <ndizihiweregis06@gmail.com>",
+  "license": "MIT",
+  "scripts" : {
+    "build" : "tsc",
+    "dev" : "nodemon ./dist/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "tsc": "^2.0.4",
+    "typescript": "^4.9.4"
+  }
+}
