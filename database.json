@@ -1,23 +1,33 @@
-
 {
-    "$schema" : "http://json-schema.org/draft-04/schema#",
-    "db" : {
-        "users" : [
-            {
-             "id" : "1" ,
-             "username" : "leerob",
-             "email" : "lee@rob.io",
-             "password" : "robinin"   
-            }
-        ],
-        "posts" : [
-            {
-                "id" : "1",
-                "userId" : "1",
-                "photo" : "https://j.co/6235jjgk",
-                "caption" : "Look at home"
-            }
-        ]
-    }
-    
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "db": {
+    "users": [
+      {
+        "id": "1",
+        "username": "leerob",
+        "email": "lee@rob.io",
+        "password": "robinin"
+      },
+      {
+        "id": "1",
+        "username": "delba",
+        "email": "delba@dl.io",
+        "password": "delba"
+      },
+      {
+        "id": "2",
+        "username": "leerob",
+        "email": "lee@rob.io",
+        "password": "robinin"
+      }
+    ],
+    "posts": [
+      {
+        "id": "1",
+        "userId": "1",
+        "photo": "https://j.co/6235jjgk",
+        "caption": "Look at home"
+      }
+    ]
+  }
 }
