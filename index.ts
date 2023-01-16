@@ -1,6 +1,12 @@
 import { getData } from "./scripts/getData.js";
 
-(async function(){
-    const data  =  await getData({collection : "people"})
+(async function () {
+    const data = await getData({
+        collection: "users",
+        where: {
+            id : 1
+        }
+    }
+    )
     console.log(data)
 }())

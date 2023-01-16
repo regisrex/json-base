@@ -16,5 +16,13 @@ export class CollectionNotFoundError extends Error {
 export class DatabaseError extends Error {
     constructor(err : string) {
         super(err)
+        this.name  = "Database Error"
+    }
+}
+
+export class NotFoundError extends Error {
+    constructor(err : string) {
+        super(err)
+        this.name = "Not Found Error"
     }
 }

@@ -10,5 +10,9 @@ module.exports =  {
       sourceType:  'module',  // Allows for the use of imports
     },
   
-    rules: {}
+    rules: {
+      "semi": 0 ,
+      "trailingComma": "off",
+      "singleQuote": "off"
+    }
   }

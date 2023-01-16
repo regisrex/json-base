@@ -1,6 +1,5 @@
 import { type ReadStream, createReadStream } from 'fs'
 import { CollectionNotFoundError } from '../errors/errorHandler.js'
-import { log } from 'console';
 
 export async function getCollection<T>(collection: string): Promise<any> {
     try {
@@ -8,7 +7,7 @@ export async function getCollection<T>(collection: string): Promise<any> {
         const _database_src: ReadStream = createReadStream('./database.json');
         let database: string = ''
         let parsedDatabase: any = null
-        let __requested_coll: T[] = null
+        let __requested_coll: T[] | null = null
         return new Promise((resolve, reject) => {
             _database_src
                 .on('error' , (err) => {
