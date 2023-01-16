@@ -2,7 +2,29 @@
   "name": "jsondb",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "author": "ndzhwr <ndizihiweregis06@gmail.com>",
+  "description": "A simple json database with an ORM, for Javascript and typescript",
+  "author":{
+    "name": "Regis NDIZIHIWE",
+    "email": "ndizihiweregis06@gmail.com",
+    "url": "https://github.com/ndzhwr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndzhwr/jsondb.git"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "keywords": [
+    "json",
+    "json database",
+    "json ORM",
+    "database",
+    "javascript",
+    "typescript",
+    "ndzhwr",
+    "lightweight"
+  ],
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -21,10 +43,7 @@
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
-    "@types/yargs": "^17.0.19",
-    "chalk": "^5.2.0",
-    "nodemon": "^2.0.20",
-    "yargs": "^17.6.2"
+    "chalk": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
