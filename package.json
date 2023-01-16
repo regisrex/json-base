@@ -4,11 +4,12 @@
   "main": "dist/index.js",
   "author": "ndzhwr <ndizihiweregis06@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "lint": "npx eslint  --ext .ts --fix",
     "build": "tsc",
-    "dev": "nodemon dist/index.js",
-    "prepare": "husky install"
+    "cli:dev": " tsc && node dist/cli/index.js",
+    "dev": "nodemon dist/index.js"
   },
   "bin": {
     "jsondb": "dist/cli/index.js"
@@ -16,22 +17,22 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
-    },
-    "dependencies": {
-      "@types/node": "^18.11.18",
-      "@types/yargs": "^17.0.19",
-      "nodemon": "^2.0.20",
-      "tsc": "^2.0.4",
-      "typescript": "^4.9.4",
-      "yargs": "^17.6.2"
-    },
-    "devDependencies": {
-      "@typescript-eslint/eslint-plugin": "^5.48.0",
-      "@typescript-eslint/parser": "^5.48.0",
-      "eslint": "^8.31.0",
-      "eslint-plugin-prettier": "^4.2.1",
-      "prettier": "^2.8.2",
-      "husky": "^8.0.0"
     }
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/yargs": "^17.0.19",
+    "chalk": "^5.2.0",
+    "nodemon": "^2.0.20",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "eslint": "^8.31.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "prettier": "^2.8.2"
   }
 }

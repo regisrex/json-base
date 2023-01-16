@@ -3,8 +3,8 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ES2020",
-    "sourceMap": true ,
     "outDir": "dist",
+    "declaration": true,
   },
-  "include": ["src/**/*"],
+  "include": ["**/*"],
 } 
