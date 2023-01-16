@@ -26,3 +26,10 @@ export class NotFoundError extends Error {
         this.name = "Not Found Error"
     }
 }
+
+export class DuplicationError extends  Error {
+    constructor(err : string){
+        super(err)
+        this.name =  "Duplication error"
+    }
+}

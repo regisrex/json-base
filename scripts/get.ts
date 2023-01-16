@@ -8,7 +8,7 @@ export interface GetDataProps extends GetDataOptions {
     collection: string
 }
 
-export async function getData(params: GetDataProps): Promise<any> {
+export async function get(params: GetDataProps): Promise<any> {
     let data_to_return: any;
     if (!params.collection) {
         throw new MissingParamError("collection")

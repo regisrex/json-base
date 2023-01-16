@@ -4,21 +4,21 @@
     "users": [
       {
         "id": "1",
-        "username": "leerob",
-        "email": "lee@rob.io",
-        "password": "robinin"
+        "username": "tim",
+        "email": "tim@neut.io",
+        "password": "timneut"
       },
       {
         "id": "1",
-        "username": "delba",
-        "email": "delba@dl.io",
+        "username": "oliviera",
+        "email": "delba@del.dev",
         "password": "delba"
       },
       {
         "id": "2",
         "username": "leerob",
-        "email": "lee@rob.io",
-        "password": "robinin"
+        "email": "leerob@gmail.com",
+        "password": "123456"
       }
     ],
     "posts": [
