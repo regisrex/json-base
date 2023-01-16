@@ -111,3 +111,7 @@ pack-lock.json
 
 IDE and editor files
 .idea
+
+
+# Testing files
+/database.json
