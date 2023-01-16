@@ -30,7 +30,7 @@
   "scripts": {
     "lint": "npx eslint  --ext .ts --fix",
     "build": "tsc",
-    "cli:dev": " tsc && node dist/cli/index.js",
+    "cli:dev": " node dist/cli/index.js --init",
     "dev": "nodemon dist/index.js",
     "test": "vitest"
   },

@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ES2020",
     "target": "ES2020",
+    "moduleResolution" : "node",
     "outDir": "dist",
     "strict": true,
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "alwaysStrict": true,
     "declaration": true,
+    "allowSyntheticDefaultImports"  : true
   },
   "include": ["**/*"],
+  "exclude"  :["__tests__"]
 } 
