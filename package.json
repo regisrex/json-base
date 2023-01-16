@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "description": "A simple json database with an ORM, for Javascript and typescript",
-  "author":{
+  "author": {
     "name": "Regis NDIZIHIWE",
     "email": "ndizihiweregis06@gmail.com",
     "url": "https://github.com/ndzhwr"
@@ -31,7 +31,8 @@
     "lint": "npx eslint  --ext .ts --fix",
     "build": "tsc",
     "cli:dev": " tsc && node dist/cli/index.js",
-    "dev": "nodemon dist/index.js"
+    "dev": "nodemon dist/index.js",
+    "test": "vitest"
   },
   "bin": {
     "jsondb": "dist/cli/index.js"
@@ -52,6 +53,7 @@
     "eslint": "^8.31.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
-    "prettier": "^2.8.2"
+    "prettier": "^2.8.2",
+    "vitest": "^0.27.1"
   }
 }
