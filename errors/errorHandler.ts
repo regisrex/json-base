@@ -28,8 +28,8 @@ export class NotFoundError extends Error {
 }
 
 export class DuplicationError extends  Error {
-    constructor(err : string){
-        super(err)
+    constructor(err? : string){
+        super(err || "Duplication error occured")
         this.name =  "Duplication error"
     }
 }
