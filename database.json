@@ -1,1 +1,33 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","db":{"users":[{"id":"1","username":"tim","email":"tim@neut.io","password":"timneut"},{"id":"1","username":"oliviera","email":"delba@del.dev","password":"delba"},{"id":"2","username":"leerob","email":"leerob@gmail.com","password":"123456"}],"posts":[{"id":"1","userId":"1","photo":"https://j.co/6235jjgk","caption":"Look at home"}]}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "db": {
+    "users": [
+      {
+        "id": "1",
+        "username": "tim",
+        "email": "tim@neut.io",
+        "password": "timneut"
+      },
+      {
+        "id": "2",
+        "username": "oliviera",
+        "email": "delba@del.dev",
+        "password": "delba"
+      },
+      {
+        "id": "3",
+        "username": "leerob",
+        "email": "leerob@gmail.com",
+        "password": "123456"
+      }
+    ],
+    "posts": [
+      {
+        "id": "1",
+        "userId": "1",
+        "photo": "https://j.co/6235jjgk",
+        "caption": "Look at home"
+      }
+    ]
+  }
+}
