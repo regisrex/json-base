@@ -12,5 +12,5 @@
     "allowSyntheticDefaultImports"  : true
   },
   "include": ["**/*"],
-  "exclude"  :["__tests__"]
+  "exclude"  :["__tests__", "dist"]
 } 
