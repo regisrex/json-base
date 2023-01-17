@@ -171,4 +171,4 @@ This repo is  maintained by [@ndzhwr](https://github.com/ndzhwr).
 This project is [MIT](LICENCE) licenced.
 ___
 
-<p align="right">⁕ <a href="https://github.com/ndzhwr/works">ndzhwr-works</a> 2023. </p>
+<p align="right"> Jan 2023. </p>
