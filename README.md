@@ -162,7 +162,7 @@ Enough for updating data, the next is to learn how to delete some records from t
 
 ## Contributing
 Willing to contribute to this Open Source project ?
-You can contribute to this project by **making bug reports** , **requesing feautures** ,  **Adding features** and more other ways. Read more  [here](https://github.com/ndzhwr/.github/blob/main/CONTRIBUTING.md) before contributing.
+You can contribute to this project by **making bug reports** , **requesing feautures** ,  **Adding features** and more other ways. Read more  [here](CONTRIBUTING.md) before contributing.
 
 ## Maintainers
 This repo is  maintained by [@ndzhwr](https://github.com/ndzhwr).
