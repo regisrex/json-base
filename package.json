@@ -1,8 +1,11 @@
 {
-  "name": "jsondb",
+  "name": "json-base",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "description": "A simple json database with an ORM, for Javascript and typescript",
+  "description": "A simple json dbms with an orm,  for nodejs, compatible with js and ts.",
+  "files" : [
+    "/dist"
+  ],
   "author": {
     "name": "Regis NDIZIHIWE",
     "email": "ndizihiweregis06@gmail.com",
@@ -10,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ndzhwr/jsondb.git"
+    "url": "https://github.com/ndzhwr/json-base.git"
   },
   "engines": {
     "node": ">=8.10.0"
@@ -23,7 +26,9 @@
     "javascript",
     "typescript",
     "ndzhwr",
-    "lightweight"
+    "lightweight",
+    "json-base",
+    "json orm"
   ],
   "license": "MIT",
   "type": "module",
@@ -35,7 +40,7 @@
     "test": "vitest"
   },
   "bin": {
-    "jsondb": "dist/cli/index.js"
+    "json-base": "dist/cli/index.js"
   },
   "husky": {
     "hooks": {
@@ -43,7 +48,6 @@
     }
   },
   "dependencies": {
-    "@types/chalk": "^2.2.0",
     "chalk": "^5.2.0"
   },
   "devDependencies": {
