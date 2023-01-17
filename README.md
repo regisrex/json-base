@@ -1,4 +1,4 @@
-# **json-base**
+# **📦 json-base**
 A simple json dbms with an orm, for nodejs, compatible with js and ts.
 ___
 
