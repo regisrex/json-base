@@ -165,7 +165,8 @@ Willing to contribute to this Open Source project ?
 You can contribute to this project by **making bug reports** , **requesing feautures** ,  **Adding features** and more other ways. Read more  [here](CONTRIBUTING.md) before contributing.
 
 ## Maintainers
-This repo is  maintained by [@ndzhwr](https://github.com/ndzhwr).
+This repo is  maintained by [@ndzhwr](https://github.com/ndzhwr).  
+You can buy him coffee on  <a style="color:yellow;" href="https://www.buymeacoffee.com/ndzhwr">Buymeacoffee</a>
 
 ## Licence
 This project is [MIT](LICENCE) licenced.
