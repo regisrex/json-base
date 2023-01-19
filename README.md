@@ -1,5 +1,7 @@
 # **📦 json-base**
-A simple json dbms with an orm, for nodejs, compatible with js and ts.
+A simple json dbms with an orm, for nodejs, compatible with js and ts.  
+</br>
+![NPM Downloads](https://img.shields.io/npm/dw/@ndzhwr/json-base?style=flat-square)
 ___
 
 ```bash
