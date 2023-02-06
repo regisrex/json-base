@@ -50,6 +50,7 @@ Let's have a simple tutorial on how we can use this `json-base`. We're going to 
 2. Deleting data with del() api
 3. Updating data with set() api
 4. Adding data with add() api
+5. Deleting All data with delAll() api
 
 #### 0. Setting up jsondb in a project
 Before starting to perform transactions to the database, let's 
