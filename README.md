@@ -159,6 +159,19 @@ Enough for updating data, the next is to learn how to delete some records from t
   }())
 ```
 
+
+We can't finish without talking about how to delete all data from db in case you want . here are code example
+
+```ts
+ import { delAll } from '@ndzhwr/json-base'
+  
+  (async function(){
+       await delAll();
+  }())
+
+```
+
+
 🎉 Congrats! Now we've finished creating our CRUD operations on the models and I hope now you're able to consume the API and make your life easier.  
 *For more, jsdoc was used , hover on your imported function to see the documentation*
 
