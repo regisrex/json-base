@@ -50,6 +50,7 @@ Let's have a simple tutorial on how we can use this `json-base`. We're going to 
 2. Deleting data with del() api
 3. Updating data with set() api
 4. Adding data with add() api
+5. Deleting All data with delAll() api
 
 #### 0. Setting up jsondb in a project
 Before starting to perform transactions to the database, let's 
@@ -157,6 +158,19 @@ Enough for updating data, the next is to learn how to delete some records from t
        })
   }())
 ```
+
+
+We can't finish without talking about how to delete all data from db in case you want . here are code example
+
+```ts
+ import { delAll } from '@ndzhwr/json-base'
+  
+  (async function(){
+       await delAll();
+  }())
+
+```
+
 
 🎉 Congrats! Now we've finished creating our CRUD operations on the models and I hope now you're able to consume the API and make your life easier.  
 *For more, jsdoc was used , hover on your imported function to see the documentation*
