@@ -35,13 +35,13 @@ $ npx json-base --init
 
 Normally, the database.json created comes with 2 sample data collections, 'users' ans 'posts', you can add more collections as you please, it's allow.   
 
-**NB** : Respect the sythax of json files while adding new collection and also keep in mind that all collections must be enwrapped in the  `db`  field.
+**NB** : Respect the syntax of json files while adding new collection and also keep in mind that all collections must be enwrapped in the  `db`  field.
 <br>
 
 
 **4. Perform crud on the schemas as you need it**  
 
-Let's have a simple tutorial on how we can use this `json-base`. We're going to create a simple app to interact with our models where we can get all the  users, get a particular user with a unique key or get a group of users but not all. The developer can also get a limited number of users if he or she specifies the limit arguement in the get function. We're doing this in [tutorial](#3-a-simple-tutorial) section
+Let's have a simple tutorial on how we can use this `json-base`. We're going to create a simple app to interact with our models where we can get all the  users, get a particular user with a unique key or get a group of users but not all. The developer can also get a limited number of users if he or she specifies the limit argument in the get function. We're doing this in [tutorial](#3-a-simple-tutorial) section
 
 ## 3. A simple tutorial 
 
@@ -106,7 +106,7 @@ import { get } from '@ndzhwr/json-base'
            })
   }())
 ```
-The code above retreives `1 record` from the `users` collection, where `user.id == 2`
+The code above retrieves `1 record` from the `users` collection, where `user.id == 2`
 
 #### 3. Create data
 As said before, we'll be creating  a simple crud operation, this means that we already have read checked on our todo checklist as read is the same as getting data. Next we're going to work on creating data.
@@ -178,14 +178,14 @@ We can't finish without talking about how to delete all data from db in case you
 
 ## Contributing
 Willing to contribute to this Open Source project ?
-You can contribute to this project by **making bug reports** , **requesing feautures** ,  **Adding features** and more other ways. Read more  [here](CONTRIBUTING.md) before contributing.
+You can contribute to this project by **making bug reports** , **requesting features** ,  **Adding features** and more other ways. Read more  [here](CONTRIBUTING.md) before contributing.
 
 ## Maintainers
 This repo is  maintained by [@ndzhwr](https://github.com/ndzhwr).  
 You can buy him coffee on  <a style="color:yellow;" href="https://www.buymeacoffee.com/ndzhwr">Buymeacoffee</a>
 
 ## Licence
-This project is [MIT](LICENCE) licenced.
+This project is [MIT](LICENSE) licensed.
 ___
 
 <p align="right"> Jan 2023. </p>
