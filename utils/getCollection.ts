@@ -10,10 +10,10 @@ export async function getCollection<T>(collection: string): Promise<any> {
         let __requested_coll: T[] | null = null
         return new Promise((resolve, reject) => {
             _database_src
-                .on('error' , (err) => {
+                .on('error' , (err : any) => {
                     reject(new Error(err.message))
                 })
-                .on("data", (chunk) => {
+                .on("data", (chunk: any) => {
                     database += chunk.toString("utf-8")
                 })
                 .on("end", async () => {
