@@ -1,6 +1,6 @@
 {
   "name": "@ndzhwr/json-base",
-  "version": "0.1.01",
+  "version": "0.1.02",
   "main": "dist/index.js",
   "description": "A simple json dbms with an orm,  for nodejs, compatible with js and ts.",
   "files" : [
