@@ -75,6 +75,3 @@ switch (args[0]) {
         console.log("\n")
         console.log(chalk.yellowBright("Happy coding  :)"))
 }
-
-
-
