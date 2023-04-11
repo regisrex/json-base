@@ -3,7 +3,7 @@
   "version": "0.1.02",
   "main": "dist/index.js",
   "description": "A simple json dbms with an orm,  for nodejs, compatible with js and ts.",
-  "files" : [
+  "files": [
     "/dist"
   ],
   "author": {
@@ -51,6 +51,7 @@
     "chalk": "^5.2.0"
   },
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.0",
     "@typescript-eslint/parser": "^5.48.0",
