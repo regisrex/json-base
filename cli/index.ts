@@ -2,6 +2,7 @@
 import process from "process"
 import {  writeFileSync } from "fs"
 import chalk from "chalk"
+import { CreateFileError } from "../errors/errorHandler"
 import("chalk")
 
 const args: string[] = process.argv.splice(2, 4)
@@ -11,8 +12,8 @@ async function createFile(fileName: string, fileContent: string) {
     try {
         writeFileSync(fileName, fileContent)
         console.log(`Successfully created file ${fileName}`);
-    } catch (error) {
-
+    } catch (error : any) {
+        throw new CreateFileError(error.message);
     }
 }
 
@@ -41,9 +42,7 @@ let exampleData: string = `
 }
 `
 
-const jsondb = `
-  JSONDB
-`
+const jsondb = `JSONDB`
 
 const usage = `
 \t Usage of JSONDB cli
@@ -62,7 +61,6 @@ switch (args[0]) {
         console.log("Initializing database.json in your project...")
             createFile('database.json', exampleData)
             console.log( chalk.greenBright("💥 Created database.json successfully"))
-            console.log("\n")
             console.log(chalk.yellowBright("Happy coding  :)"))
             process.exit(1)
             break;
@@ -70,8 +68,6 @@ switch (args[0]) {
     case undefined:
     case null :
     default:
-        console.log("\tUnknown usage of jsondb cli")
         console.log(usage)
-        console.log("\n")
         console.log(chalk.yellowBright("Happy coding  :)"))
 }

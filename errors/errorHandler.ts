@@ -33,3 +33,11 @@ export class DuplicationError extends  Error {
         this.name =  "Duplication error"
     }
 }
+
+export class CreateFileError extends Error {
+    constructor(err? : string){
+        super(err || "Failed to create database.json")
+        this.name =  "CreateFile Error"
+    }
+    
+}

@@ -2,7 +2,7 @@
   "name": "@ndzhwr/json-base",
   "version": "0.1.02",
   "main": "dist/index.js",
-  "description": "A simple json dbms with an orm,  for nodejs, compatible with js and ts.",
+  "description": "A simple json-as-db tool with an orm,  for nodejs, compatible with js and ts.",
   "files": [
     "/dist"
   ],
@@ -35,7 +35,8 @@
   "scripts": {
     "lint": "npx eslint  --ext .ts --fix",
     "build": "tsc",
-    "cli:dev": " node dist/cli/index.js --init",
+    "cli:init": " node dist/cli/index.js --init",
+    "cli:help": " node dist/cli/index.js --help",
     "dev": "nodemon dist/index.js",
     "test": "vitest"
   },
