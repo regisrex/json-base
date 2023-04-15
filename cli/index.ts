@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import process from "process"
 import {  writeFileSync } from "fs"
-import chalk from "chalk"
-import { CreateFileError } from "../errors/errorHandler"
-import("chalk")
+import  chalk from "chalk"
+import { CreateFileError } from "../errors/errorHandler.js"
+
 
 const args: string[] = process.argv.splice(2, 4)
 
@@ -51,8 +51,6 @@ const usage = `
 \t \t --version : Prints the npm version of jsondb
 \t \t --init    : Initialize database.json in your project
 \t \t --help    : Show this help message
-\n
-
 `
 
 switch (args[0]) {
@@ -69,5 +67,5 @@ switch (args[0]) {
     case null :
     default:
         console.log(usage)
-        console.log(chalk.yellowBright("Happy coding  :)"))
+        console.log(chalk.yellowBright("\t\tHappy coding  :)"))
 }
