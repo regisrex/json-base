@@ -100,16 +100,11 @@ dist
 # DynamoDB Local files
 .dynamodb/
 
-dist/
-
-# TernJS port file
-.tern-port
 
 yarn.lock
 
 pack-lock.json
 
-IDE and editor files
 .idea
 
 
