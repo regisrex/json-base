@@ -1,5 +1,5 @@
-import { getJSONDb } from "../utils/getJSONDb";
-import { setJSONDb } from "../utils/setJSONDb";
+import { getJSONDb } from "../utils/getJSONDb.js";
+import { setJSONDb } from "../utils/setJSONDb.js";
 
 export async function delAll() {
   try {
