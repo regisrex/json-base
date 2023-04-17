@@ -1,0 +1,43 @@
+import { CollectionNotFoundError, MissingParamError } from "../errors/errorHandler.js";
+import { getJSONDb } from "../utils/getJSONDb.js";
+import { setJSONDb } from "../utils/setJSONDb.js";
+/**
+ * ### del
+ *  An asynchronous json-base api for deleting data from database.json
+ * @async
+ * @param params.collection A collectio to delete data from
+ * @param params.where An object that provides a unique key and value of the record to be deleted
+ * @returns Promise
+ * @example
+ * ```
+ * import { del } from 'json-base'
+ *
+ * (async function(){
+ *      await del({
+ *          collection  : "posts",
+ *          where : {
+ *                 id : 1
+ *              }
+ *      })
+ * }())
+ * ```
+ */
+export async function del(params) {
+    try {
+        const where_clause = Object.entries(params.where);
+        const jsonDB = JSON.parse(await getJSONDb());
+        if (!params.collection)
+            throw new MissingParamError('collection');
+        if (!params.where)
+            throw new MissingParamError('where clause');
+        const coll = jsonDB['db'][`${params.collection}`];
+        if (!coll)
+            throw new CollectionNotFoundError(`${params.collection}`);
+        const index = coll.indexOf(coll.find((rec) => rec[`${where_clause[0][0]}`] == `${where_clause[0][1]}`));
+        coll.splice(index, 1);
+        setJSONDb(JSON.stringify(jsonDB));
+    }
+    catch (error) {
+        throw new Error(error.message);
+    }
+}
