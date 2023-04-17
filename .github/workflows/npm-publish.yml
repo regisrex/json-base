@@ -1,9 +1,9 @@
-name: @ndzhwr/json-base
+name: json-base
 
 on:
   push:
     branches:
-        - prod
+        - npm
 jobs:
   build:
     runs-on: ubuntu-latest
