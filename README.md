@@ -1,5 +1,5 @@
 # **📦 json-base**
-A simple json dbms with an orm, for nodejs, compatible with js and ts.  
+A simple json dbms with an orm, for nodejs
 </br>
 ![NPM Downloads](https://img.shields.io/npm/dw/@ndzhwr/json-base?style=flat-square)
 ___
@@ -7,11 +7,14 @@ ___
 ```bash
 npm install @ndzhwr/json-base
 ```
+<blockquote>
+ This package doesn't work well with typescript-projects currently, I'm still working hard to fix this
+</blockquote>
 
 <br></br>
 Use json file as your database on the backend, json-base create the database json file for you and also provides you with a lightweight ORM to perform transactions on your database.
 
-## 2. Get Started
+## Get Started
 
 To get started, first make sure you have the latest stable version of nodejs on your computer. Another thing is that `json-base` runs only in a node environemt.
 
@@ -41,9 +44,9 @@ Normally, the database.json created comes with 2 sample data collections, 'users
 
 **4. Perform crud on the schemas as you need it**  
 
-Let's have a simple tutorial on how we can use this `json-base`. We're going to create a simple app to interact with our models where we can get all the  users, get a particular user with a unique key or get a group of users but not all. The developer can also get a limited number of users if he or she specifies the limit argument in the get function. We're doing this in [tutorial](#3-a-simple-tutorial) section
+Let's have a simple tutorial on how we can use this `json-base`. We're going to create a simple app to interact with our models where we can get all the  users, get a particular user with a unique key or get a group of users but not all. The developer can also get a limited number of users if he or she specifies the limit argument in the get function. We're doing this in [tutorial](#a-simple-tutorial) section
 
-## 3. A simple tutorial 
+## A simple tutorial 
 
 **Table of contents**  
 1. Getting data with get() api
@@ -181,8 +184,8 @@ Willing to contribute to this Open Source project ?
 You can contribute to this project by **making bug reports** , **requesting features** ,  **Adding features** and more other ways. Read more  [here](CONTRIBUTING.md) before contributing.
 
 ## Maintainers
-This repo is  maintained by [@ndzhwr](https://github.com/ndzhwr).  
-You can buy him coffee on  <a style="color:yellow;" href="https://www.buymeacoffee.com/ndzhwr">Buymeacoffee</a>
+This project is  maintained by [R&eacute;gis NDIZIHIWE](https://github.com/ndzhwr).  
+<!-- You can buy him coffee on  <a style="color:yellow;" href="https://www.buymeacoffee.com/ndzhwr">Buymeacoffee</a> -->
 
 ## Licence
 This project is [MIT](LICENSE) licensed.
