@@ -95,7 +95,7 @@ learn a little bit on the usage of the  CLI
 
 You will need to remove the models in the json database as long as the sample ones may not match  with your purpose.
 
-#### 2. Getting data
+#### 2. I Getting data (Simple where clause)
 In this section, we're going to see how we can get data from our json database.   
 ```ts
 import { get } from '@ndzhwr/json-base'
@@ -105,11 +105,30 @@ import { get } from '@ndzhwr/json-base'
                where : {
                      id : 2
                    },
-               limit :  1
+               limit :  1,
            })
   }())
 ```
-The code above retrieves `1 record` from the `users` collection, where `user.id == 2`
+The code above retrieves `1 record` from the `users` collection, where `user.id == 2` 
+### 2. II Getting data (Complex where clause)
+
+You can use the lt, gt, lte, gte, and eq operators in the where clause like this:
+
+```typescript
+import { get } from 'json-base'
+
+(async function(){
+    const aUsersWithId2  =  await get({
+        collection : "users",
+        where : {
+            id : { lt: 10, gt: 3 }
+        },
+        limit :  1
+    })
+    console.log(aUsersWithId2);
+}());
+```
+In this example, we are querying the "users" collection for records where the "id" field is less than 10 and greater than 3, and limiting the results to 1 record. The lt, gt, lte, gte, and eq operators are used to specify the comparison operators in the query. The get() function will return the matching record(s) if found, or throw an error if not found.
 
 #### 3. Create data
 As said before, we'll be creating  a simple crud operation, this means that we already have read checked on our todo checklist as read is the same as getting data. Next we're going to work on creating data.
