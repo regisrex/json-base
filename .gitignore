@@ -107,5 +107,7 @@ pack-lock.json
 .idea
 
 
+/dist
+
 # Testing files
 /database.json

@@ -37,7 +37,7 @@
     "build": "tsc",
     "cli:init": " node dist/cli/index.js --init",
     "cli:help": " node dist/cli/index.js --help",
-    "dev": "nodemon dist/index.js",
+    "dev": "npx nodemon dist/index.js",
     "test": "vitest"
   },
   "bin": {
