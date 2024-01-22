@@ -1,19 +1,19 @@
 {
   "name": "@ndzhwr/json-base",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "dist/index.js",
-  "description": "A simple json-as-db tool with an orm,  for nodejs, compatible with js and ts.",
+  "description": "a lightweight odm for json file inspired by prisma",
   "files": [
     "/dist"
   ],
   "author": {
     "name": "Regis NDIZIHIWE",
     "email": "ndizihiweregis06@gmail.com",
-    "url": "https://github.com/ndzhwr"
+    "url": "https://github.com/regisreex"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ndzhwr/json-base.git"
+    "url": "git+https://github.com/ndzhwr/json-base.git"
   },
   "engines": {
     "node": ">=8.10.0"

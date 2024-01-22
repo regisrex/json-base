@@ -31,7 +31,7 @@ export interface GetDataProps extends GetDataOptions {
  * }())
  * ```
  */
-export async function get(params: GetDataProps): Promise<any> {
+export default async function get(params: GetDataProps): Promise<any> {
   let data_to_return: any;
   if (!params.collection) {
     throw new MissingParamError("collection");
@@ -41,7 +41,7 @@ export async function get(params: GetDataProps): Promise<any> {
   if (params.where) {
     const where_data = Object.entries(params.where);
     for (let i: number = 0; i < where_data.length; i++) {
-      const [field, filter]:[any, any] = where_data[i];
+      const [field, filter]: [any, any] = where_data[i];
       if (typeof filter === "object") {
         const filterEntries = Object.entries(filter);
         let data: any = data_to_return;

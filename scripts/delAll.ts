@@ -1,7 +1,7 @@
 import { getJSONDb } from "../utils/getJSONDb.js";
 import { setJSONDb } from "../utils/setJSONDb.js";
 
-export async function delAll() {
+export default async function delAll() {
   try {
     const jsonDB = JSON.parse(await getJSONDb());
     jsonDB["db"] = {};

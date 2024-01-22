@@ -1,7 +1,7 @@
 #!/usr/bin/env node
+import chalk from "chalk"
+import { writeFileSync } from "fs"
 import process from "process"
-import {  writeFileSync } from "fs"
-import  chalk from "chalk"
 import { CreateFileError } from "../errors/errorHandler.js"
 
 
@@ -12,7 +12,7 @@ async function createFile(fileName: string, fileContent: string) {
     try {
         writeFileSync(fileName, fileContent)
         console.log(`Successfully created file ${fileName}`);
-    } catch (error : any) {
+    } catch (error: any) {
         throw new CreateFileError(error.message);
     }
 }
@@ -42,29 +42,28 @@ let exampleData: string = `
 }
 `
 
-const jsondb = `JSONDB`
+const title = `json-base`
 
 const usage = `
-\t Usage of JSONDB cli
-\t npx jsondb  <command>
+\t Usage of json-base cli
+\t npx json-base  <command>
 \t Commands : 
-\t \t --version : Prints the npm version of jsondb
+\t \t --version : Prints the npm version of json-base
 \t \t --init    : Initialize database.json in your project
 \t \t --help    : Show this help message
 `
 
 switch (args[0]) {
     case '--init':
-        console.log(chalk.bold.white.bgBlue(`\t ${ jsondb } \t`))
+        console.log(chalk.bold.white.bgBlue(`\t ${title} \t`))
         console.log("Initializing database.json in your project...")
-            createFile('database.json', exampleData)
-            console.log( chalk.greenBright("💥 Created database.json successfully"))
-            console.log(chalk.yellowBright("Happy coding  :)"))
-            process.exit(1)
-            break;
+        createFile('database.json', exampleData)
+        console.log(chalk.greenBright("💥 Created database.json successfully"))
+        console.log(chalk.yellowBright("Happy coding  :)"))
+        process.exit(1)
     case '--help':
     case undefined:
-    case null :
+    case null:
     default:
         console.log(usage)
         console.log(chalk.yellowBright("\t\tHappy coding  :)"))

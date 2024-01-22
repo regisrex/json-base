@@ -30,7 +30,7 @@ interface AddDataProps {
  * }())
  * ```
  */
-export async function add(params: AddDataProps) : Promise<any> {
+export default async function add(params: AddDataProps) : Promise<any> {
     try {
         const jsonDB: {} | any = JSON.parse(await getJSONDb())
 

@@ -1,11 +1,44 @@
+
+import add from './scripts/add.js'
+import del from './scripts/del.js'
+import delAll from './scripts/delAll.js'
+import get from './scripts/get.js'
+import set from './scripts/set.js'
+
+
 /**
- * JSONDB : A simple json dbms with an orm,
- *          for nodejs, compatible with js and ts.
+ * # 📦JSON-BASE 
+ * **a lightweight odm for json file inspired by prisma**
  * 
- * Author : Regis NDIZIHIWE
+ * 
+ * Use json file as your database on the backend, json-base create the database json file for you and also provides you with a lightweight ORM to perform transactions on your database.
+ * @repository https://github.com/regisrex/json-base
+ * @license MIT
+ * @version 0.1.6
+ * @example
+ * ```
+ *  import  { add } from 'json-base'
+ *  (async function(){
+ *      await add({
+        collection : "posts",
+        data : {
+            id  : 1 ,
+            userId : 1 ,
+            photo :  "https://linkto.img",
+            caption : "The quick brown fox"
+        }
+    })
+ * }())
+ * ```
+ * 
+ * @author  Regis NDIZIHIWE <https://regisndizihiwe.me>
  */
-export * from './scripts/get.js'
-export * from './scripts/set.js'
-export * from './scripts/del.js'
-export * from './scripts/add.js'
+export default {
+    add,
+    del,
+    get,
+    set,
+    delAll
+}
+
 // export * from './scripts/delAll.js'

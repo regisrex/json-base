@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The latest version of `jsondb` is secure
+The latest version of `json-base` is secure
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.0.x   | :white_check_mark: |

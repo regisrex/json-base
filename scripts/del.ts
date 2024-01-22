@@ -26,7 +26,7 @@ interface DeleteParams {
  * }())
  * ```
  */
-export async function del(params: DeleteParams): Promise<void> {
+export default async function del(params: DeleteParams): Promise<void> {
     try {
         const where_clause = Object.entries(params.where)
         const jsonDB = JSON.parse(await getJSONDb())

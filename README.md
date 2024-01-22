@@ -21,14 +21,14 @@ To get started, first make sure you have the latest stable version of nodejs on 
 
 **1. Install json-base dependecy with npm**  
 
-You have to install jsondb with npm, it's not currently available on other package managers like yarn, etc.
+You have to install json-base with npm, it's not currently available on other package managers like yarn, etc.
 ```bash
 $ npm install @ndzhwr/json-base
 ```
 
-**2. Initialize jsondb in your project**  
+**2. Initialize json-base in your project**  
 
-Initialize jsondb in your project. Open the root folder of your project in your terminal and initialize json-base. This will create a `database.json` file in the project.
+Initialize json-base in your project. Open the root folder of your project in your terminal and initialize json-base. This will create a `database.json` file in the project.
 
 ```bash
 $ npx json-base --init
@@ -55,7 +55,7 @@ Let's have a simple tutorial on how we can use this `json-base`. We're going to 
 4. Adding data with add() api
 5. Deleting All data with delAll() api
 
-#### 0. Setting up jsondb in a project
+#### 0. Setting up json-base in a project
 Before starting to perform transactions to the database, let's 
 learn a little bit on the usage of the  CLI 
 ```
