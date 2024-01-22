@@ -1,0 +1,14 @@
+
+classes:
+  feat:  "A new feature"
+  fix:   "A bug fix"
+  docs:  "Documentation only changes"
+  perf:  "A code change that improves performance"
+  test:  "Adding missing tests"
+  chore:  "Changes to the build process or auxiliary tools and libraries "
+scopes:
+  - cli
+  - config
+  - core
+  - docs
+                
