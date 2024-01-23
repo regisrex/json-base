@@ -9,11 +9,11 @@
   "author": {
     "name": "Regis NDIZIHIWE",
     "email": "ndizihiweregis06@gmail.com",
-    "url": "https://github.com/regisreex"
+    "url": "https://github.com/regisrex"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ndzhwr/json-base.git"
+    "url": "git+https://github.com/regisrex/json-base.git"
   },
   "engines": {
     "node": ">=8.10.0"
@@ -25,9 +25,10 @@
     "database",
     "javascript",
     "typescript",
-    "ndzhwr",
+    "regisrex",
     "lightweight",
     "json-base",
+    "json database package npm",
     "json orm"
   ],
   "license": "MIT",
@@ -38,7 +39,8 @@
     "cli:init": " node dist/cli/index.js --init",
     "cli:help": " node dist/cli/index.js --help",
     "dev": "npx nodemon dist/index.js",
-    "test": "vitest"
+    "test": "vitest",
+    "prepublish": "npm run build"
   },
   "bin": {
     "json-base": "dist/cli/index.js"
